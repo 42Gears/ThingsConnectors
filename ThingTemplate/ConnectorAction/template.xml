@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<template
+    format="4"
+    revision="1"
+    name="Action"
+    minApi="7"
+    minBuildApi="8"
+    description="Creates a action class">
+
+    <dependency name="android-support-v4" revision="8" />
+
+    <category value="Other" />
+
+    <parameter
+        id="className"
+        name="Action Name"
+        type="string"
+        constraints="class|unique|nonempty"
+        default="ConnectorAction"
+        help="The name of the action class to create" />
+
+    <thumbs>
+        <thumb>template_blank_fragment.png</thumb>
+    </thumbs>
+
+    <globals file="globals.xml.ftl" />
+    <execute file="recipe.xml.ftl" />
+
+</template>
